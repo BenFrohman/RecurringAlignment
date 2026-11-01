@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "RecurringAlignment: Lexical Drift Detection and In-Context Realignment for AI-Assistant Conversations"
+type: software
+authors:
+  - family-names: Frohman
+    given-names: Benjamin
+    email: frohmanbenjamin@gmail.com
+version: 0.2.0
+date-released: 2026-10-31
+license: MIT
+repository-code: "https://github.com/BenFrohman/RecurringAlignment"
+abstract: >-
+  A TypeScript toolkit that scores each assistant turn of a conversation for drift from a
+  user-defined anchor (goals, constraints, persona, decisions) using TF-IDF/cosine similarity
+  and rule heuristics, generates compact realignment prompts for in-context correction, and
+  rebuilds a clean resume state after drift (Drift Replay).
+keywords:
+  - large language models
+  - conversational AI
+  - drift detection
+  - context management
+  - prompt engineering
+  - TF-IDF

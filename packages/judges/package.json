@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "Optional LLM judge adapters (OpenAI- and Anthropic-compatible) plus a mock.",
   "license": "MIT",
-  "author": "Benjamin Frohman",
+  "author": "Benjamin Frohman <frohmanbenjamin@gmail.com>",
   "type": "module",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
@@ -21,5 +21,20 @@
   },
   "dependencies": {
     "@recurring-alignment/core": "0.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenFrohman/RecurringAlignment.git",
+    "directory": "packages/judges"
+  },
+  "homepage": "https://github.com/BenFrohman/RecurringAlignment#readme",
+  "keywords": [
+    "llm",
+    "ai-assistant",
+    "alignment",
+    "drift-detection",
+    "prompt-engineering",
+    "context-management",
+    "tf-idf"
+  ]
 }

@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "Drift detection engine: anchors, heuristics, TF-IDF similarity, realignment prompts.",
   "license": "MIT",
-  "author": "Benjamin Frohman",
+  "author": "Benjamin Frohman <frohmanbenjamin@gmail.com>",
   "type": "module",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
@@ -18,5 +18,20 @@
   ],
   "engines": {
     "node": ">=20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenFrohman/RecurringAlignment.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/BenFrohman/RecurringAlignment#readme",
+  "keywords": [
+    "llm",
+    "ai-assistant",
+    "alignment",
+    "drift-detection",
+    "prompt-engineering",
+    "context-management",
+    "tf-idf"
+  ]
 }

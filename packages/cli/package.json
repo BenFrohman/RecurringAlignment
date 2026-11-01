@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "description": "CLI: check, watch, anchor, report.",
   "license": "MIT",
-  "author": "Benjamin Frohman",
+  "author": "Benjamin Frohman <frohmanbenjamin@gmail.com>",
   "type": "module",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
@@ -26,5 +26,20 @@
     "@recurring-alignment/core": "0.2.0",
     "@recurring-alignment/judges": "0.2.0",
     "@recurring-alignment/replay": "0.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenFrohman/RecurringAlignment.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://github.com/BenFrohman/RecurringAlignment#readme",
+  "keywords": [
+    "llm",
+    "ai-assistant",
+    "alignment",
+    "drift-detection",
+    "prompt-engineering",
+    "context-management",
+    "tf-idf"
+  ]
 }

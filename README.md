@@ -167,3 +167,7 @@ Everything runs locally by default. Nothing leaves your machine unless you turn 
 ## License
 
 MIT © Benjamin Frohman
+
+## Paper & citation
+
+Technical report: [docs/paper/recurring-alignment.md](docs/paper/recurring-alignment.md) ([PDF](docs/paper/recurring-alignment.pdf)). Citation metadata: [CITATION.cff](CITATION.cff).
