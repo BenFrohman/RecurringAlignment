@@ -1,1 +1,20 @@
-{ "compilerOptions": { "target": "ES2022", "module": "NodeNext", "moduleResolution": "NodeNext", "outDir": "dist", "declaration": true, "strict": true, "skipLibCheck": true }, "include": ["src", "test"] }
+{
+  "files": [],
+  "references": [
+    {
+      "path": "packages/core"
+    },
+    {
+      "path": "packages/judges"
+    },
+    {
+      "path": "packages/middleware"
+    },
+    {
+      "path": "packages/replay"
+    },
+    {
+      "path": "packages/cli"
+    }
+  ]
+}

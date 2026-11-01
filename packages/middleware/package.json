@@ -1,0 +1,25 @@
+{
+  "name": "@recurring-alignment/middleware",
+  "version": "0.2.0",
+  "description": "Wrap any chat-completion function to auto-check replies and inject realignment.",
+  "license": "MIT",
+  "author": "Benjamin Frohman",
+  "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    }
+  },
+  "files": [
+    "dist/src"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@recurring-alignment/core": "0.2.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@recurring-alignment/core",
+  "version": "0.2.0",
+  "description": "Drift detection engine: anchors, heuristics, TF-IDF similarity, realignment prompts.",
+  "license": "MIT",
+  "author": "Benjamin Frohman",
+  "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    }
+  },
+  "files": [
+    "dist/src"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}

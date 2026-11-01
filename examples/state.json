@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "anchors": {
+    "trip": {
+      "goals": ["plan a 3-day budget Chicago trip for two"],
+      "constraints": ["avoid luxury"],
+      "decisions": [],
+      "persona": "Taloose, friendly travel planner"
+    }
+  }
+}

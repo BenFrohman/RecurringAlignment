@@ -1,15 +1,37 @@
 {
-  "name": "recurring-alignment",
-  "version": "0.1.0",
-  "description": "Detect drift in ongoing AI-assistant conversations and generate compact in-context realignment prompts.",
-  "type": "module",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
-  "bin": { "recurring-alignment": "dist/src/cli.js" },
-  "files": ["dist/src"],
-  "scripts": { "build": "tsc", "test": "tsc && node --test \"dist/test/*.test.js\"" },
+  "name": "recurring-alignment-monorepo",
+  "private": true,
+  "version": "0.2.0",
+  "description": "Keep AI-assistant conversations on track: detect drift and inject compact realignment prompts.",
   "license": "MIT",
   "author": "Benjamin Frohman",
-  "private": true,
-  "devDependencies": { "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+  "type": "module",
+  "workspaces": [
+    "packages/core",
+    "packages/judges",
+    "packages/middleware",
+    "packages/replay",
+    "packages/cli"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rm -rf packages/*/dist packages/*/tsconfig.tsbuildinfo",
+    "typecheck": "tsc -b",
+    "lint": "eslint . && prettier --check .",
+    "format": "prettier --write .",
+    "test": "npm run build && node --test \"packages/*/dist/test/*.test.js\"",
+    "coverage": "npm run build && node --test --experimental-test-coverage --test-coverage-exclude=\"**/dist/test/**\" --test-coverage-lines=90 --test-coverage-branches=80 --test-coverage-functions=90 \"packages/*/dist/test/*.test.js\"",
+    "demo": "npm run build && node packages/cli/dist/src/bin.js check examples/transcript.json; node examples/middleware-demo.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.3.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.0.0"
+  }
 }

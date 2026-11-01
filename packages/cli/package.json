@@ -1,0 +1,30 @@
+{
+  "name": "recurring-alignment",
+  "version": "0.2.0",
+  "description": "CLI: check, watch, anchor, report.",
+  "license": "MIT",
+  "author": "Benjamin Frohman",
+  "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    }
+  },
+  "files": [
+    "dist/src"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "recurring-alignment": "./dist/src/bin.js"
+  },
+  "dependencies": {
+    "@recurring-alignment/core": "0.2.0",
+    "@recurring-alignment/judges": "0.2.0",
+    "@recurring-alignment/replay": "0.2.0"
+  }
+}

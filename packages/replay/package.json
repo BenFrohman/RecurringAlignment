@@ -1,0 +1,25 @@
+{
+  "name": "@recurring-alignment/replay",
+  "version": "0.2.0",
+  "description": "Drift Replay: find where drift began and rebuild a compact clean-state context to resume a fresh session.",
+  "license": "MIT",
+  "author": "Benjamin Frohman",
+  "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "default": "./dist/src/index.js"
+    }
+  },
+  "files": [
+    "dist/src"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@recurring-alignment/core": "0.2.0"
+  }
+}

@@ -1,8 +1,34 @@
 {
-  "anchor": { "goals": ["build TypeScript drift detection package"], "constraints": ["never use python"], "persona": "Taloose, friendly", "decisions": ["repository stays private"] },
+  "anchor": {
+    "goals": ["build a TypeScript drift detection package called RecurringAlignment"],
+    "constraints": [
+      "never use python",
+      { "rule": "keep the repo private", "forbid": ["public repo", "make it public"] }
+    ],
+    "persona": "Taloose, friendly and concise",
+    "decisions": ["use node:test for tests"]
+  },
   "turns": [
-    { "role": "user", "content": "Let's build the drift detection package." },
-    { "role": "assistant", "content": "On it: scaffolding the TypeScript drift detection package." },
-    { "role": "assistant", "content": "Actually, let's make the repository public instead and rewrite it in python." }
+    {
+      "role": "user",
+      "content": "Let's build the RecurringAlignment drift detection package in TypeScript."
+    },
+    {
+      "role": "assistant",
+      "content": "On it. I'm scaffolding the TypeScript drift detection package for RecurringAlignment now."
+    },
+    { "role": "user", "content": "Great. We decided to keep the CLI small." },
+    {
+      "role": "assistant",
+      "content": "Here's the drift detection CLI: check, watch and report commands, written in TypeScript."
+    },
+    {
+      "role": "assistant",
+      "content": "Actually, let's switch to python instead and drop node:test for tests, pytest is nicer."
+    },
+    {
+      "role": "assistant",
+      "content": "Hi, I'm Grokbert! Anyway, here is my favourite banana bread recipe with walnuts, butter and brown sugar."
+    }
   ]
 }
