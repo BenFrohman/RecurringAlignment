@@ -1,5 +1,7 @@
 # RecurringAlignment
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23867097.svg)](https://doi.org/10.5281/zenodo.23867097)
+
 **Keep your AI conversations on track.**
 
 Long chats with AI assistants drift. The assistant forgets the goal, breaks a rule you set, undoes a decision you already made, or wanders off topic. Starting over wastes tokens and context. RecurringAlignment watches the conversation, flags the exact turn where it drifted and explains why, and writes a short **realignment note** you can drop into the _same_ chat to get it back on course.

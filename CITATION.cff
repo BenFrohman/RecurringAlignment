@@ -9,6 +9,14 @@ authors:
 version: 0.2.2
 date-released: 2026-11-01
 license: MIT
+doi: 10.5281/zenodo.23867097
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23867097
+    description: Concept DOI (all versions)
+  - type: doi
+    value: 10.5281/zenodo.23867098
+    description: Version 0.2.2
 repository-code: "https://github.com/BenFrohman/RecurringAlignment"
 abstract: >-
   A TypeScript toolkit that scores each assistant turn of a conversation for drift from a
