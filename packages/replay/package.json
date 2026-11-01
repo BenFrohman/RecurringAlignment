@@ -1,6 +1,6 @@
 {
   "name": "@recurring-alignment/replay",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Drift Replay: find where drift began and rebuild a compact clean-state context to resume a fresh session.",
   "license": "MIT",
   "author": "Benjamin Frohman <frohmanbenjamin@gmail.com>",
@@ -20,7 +20,7 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@recurring-alignment/core": "0.2.0"
+    "@recurring-alignment/core": "0.2.1"
   },
   "repository": {
     "type": "git",

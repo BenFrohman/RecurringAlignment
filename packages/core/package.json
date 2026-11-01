@@ -1,6 +1,6 @@
 {
   "name": "@recurring-alignment/core",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Drift detection engine: anchors, heuristics, TF-IDF similarity, realignment prompts.",
   "license": "MIT",
   "author": "Benjamin Frohman <frohmanbenjamin@gmail.com>",

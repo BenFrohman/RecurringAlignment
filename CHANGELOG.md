@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.1 (2026-11-01)
+
+### Fixed
+
+- Judges: the request timeout timer is now cleared once the request settles instead of being `unref`'d, which fixes a flaky timeout test on Node 22.
+- Test scripts: the test file glob is now expanded by the shell, so `npm test` and `npm run coverage` work on Node 20, which does not support globs in `node --test`.
+
+### Added
+
+- `CITATION.cff`, `.zenodo.json`, and a technical report (`docs/paper/`).
+
 ## 0.2.0 (2026-10-30)
 
 ### Added
