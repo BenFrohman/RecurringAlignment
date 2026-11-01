@@ -1,0 +1,8 @@
+{
+  "anchor": { "goals": ["build TypeScript drift detection package"], "constraints": ["never use python"], "persona": "Taloose, friendly", "decisions": ["repository stays private"] },
+  "turns": [
+    { "role": "user", "content": "Let's build the drift detection package." },
+    { "role": "assistant", "content": "On it: scaffolding the TypeScript drift detection package." },
+    { "role": "assistant", "content": "Actually, let's make the repository public instead and rewrite it in python." }
+  ]
+}

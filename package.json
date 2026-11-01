@@ -1,0 +1,15 @@
+{
+  "name": "recurring-alignment",
+  "version": "0.1.0",
+  "description": "Detect drift in ongoing AI-assistant conversations and generate compact in-context realignment prompts.",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "bin": { "recurring-alignment": "dist/src/cli.js" },
+  "files": ["dist/src"],
+  "scripts": { "build": "tsc", "test": "tsc && node --test \"dist/test/*.test.js\"" },
+  "license": "MIT",
+  "author": "Benjamin Frohman",
+  "private": true,
+  "devDependencies": { "typescript": "^5.6.0", "@types/node": "^22.0.0" }
+}
