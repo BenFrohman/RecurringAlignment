@@ -22,8 +22,8 @@
     "typecheck": "tsc -b",
     "lint": "eslint . && prettier --check .",
     "format": "prettier --write .",
-    "test": "npm run build && node --test \"packages/*/dist/test/*.test.js\"",
-    "coverage": "npm run build && node --test --experimental-test-coverage --test-coverage-exclude=\"**/dist/test/**\" --test-coverage-lines=90 --test-coverage-branches=80 --test-coverage-functions=90 \"packages/*/dist/test/*.test.js\"",
+    "test": "npm run build && node --test packages/*/dist/test/*.test.js",
+    "coverage": "npm run build && node --test --experimental-test-coverage --test-coverage-exclude=\"**/dist/test/**\" --test-coverage-lines=90 --test-coverage-branches=80 --test-coverage-functions=90 packages/*/dist/test/*.test.js",
     "demo": "npm run build && node packages/cli/dist/src/bin.js check examples/transcript.json; node examples/middleware-demo.mjs"
   },
   "devDependencies": {
