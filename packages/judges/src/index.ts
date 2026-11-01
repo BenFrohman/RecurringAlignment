@@ -76,18 +76,23 @@ abstract class HttpJudge implements Judge {
     return this.#key;
   }
   protected async post(url: string, headers: Record<string, string>, body: unknown): Promise<unknown> {
+    let t: ReturnType<typeof setTimeout> | undefined;
     const timer = new Promise<never>((_, rej) => {
-      const t = setTimeout(() => rej(new Error(`${this.name} timed out`)), this.opts.timeoutMs);
-      (t as { unref?: () => void }).unref?.();
+      t = setTimeout(() => rej(new Error(`${this.name} timed out`)), this.opts.timeoutMs);
     });
-    const res = await Promise.race([
-      this.opts.fetch(url, {
-        method: "POST",
-        headers: { "content-type": "application/json", ...headers },
-        body: JSON.stringify(body),
-      }),
-      timer,
-    ]);
+    let res: Awaited<ReturnType<FetchLike>>;
+    try {
+      res = await Promise.race([
+        this.opts.fetch(url, {
+          method: "POST",
+          headers: { "content-type": "application/json", ...headers },
+          body: JSON.stringify(body),
+        }),
+        timer,
+      ]);
+    } finally {
+      clearTimeout(t);
+    }
     if (!res.ok) throw new Error(`${this.name} HTTP ${res.status}: ${(await res.text()).slice(0, 200)}`);
     return res.json();
   }
