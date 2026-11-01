@@ -1,6 +1,6 @@
 {
   "name": "@recurring-alignment/middleware",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Wrap any chat-completion function to auto-check replies and inject realignment.",
   "license": "MIT",
   "author": "Benjamin Frohman <frohmanbenjamin@gmail.com>",
@@ -20,7 +20,7 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@recurring-alignment/core": "0.2.1"
+    "@recurring-alignment/core": "0.2.2"
   },
   "repository": {
     "type": "git",

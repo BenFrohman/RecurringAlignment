@@ -6,7 +6,7 @@ authors:
   - family-names: Frohman
     given-names: Benjamin
     email: frohmanbenjamin@gmail.com
-version: 0.2.1
+version: 0.2.2
 date-released: 2026-11-01
 license: MIT
 repository-code: "https://github.com/BenFrohman/RecurringAlignment"

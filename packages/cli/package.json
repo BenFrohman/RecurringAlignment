@@ -1,6 +1,6 @@
 {
   "name": "recurring-alignment",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "CLI: check, watch, anchor, report.",
   "license": "MIT",
   "author": "Benjamin Frohman <frohmanbenjamin@gmail.com>",
@@ -23,9 +23,9 @@
     "recurring-alignment": "./dist/src/bin.js"
   },
   "dependencies": {
-    "@recurring-alignment/core": "0.2.1",
-    "@recurring-alignment/judges": "0.2.1",
-    "@recurring-alignment/replay": "0.2.1"
+    "@recurring-alignment/core": "0.2.2",
+    "@recurring-alignment/judges": "0.2.2",
+    "@recurring-alignment/replay": "0.2.2"
   },
   "repository": {
     "type": "git",

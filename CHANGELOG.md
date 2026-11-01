@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.2 (2026-11-01)
+
+### Changed
+
+- Zenodo archival release: no code changes. This release exists so Zenodo can archive the project and mint a DOI.
+
 ## 0.2.1 (2026-11-01)
 
 ### Fixed
