@@ -14,3 +14,16 @@ npm run format    # auto-format
 - Keep `core` free of runtime dependencies.
 - Never commit API keys. Judges read keys from the environment only.
 - Keep commits small, and update `CHANGELOG.md` under "Unreleased".
+
+## Publishing (maintainer)
+
+Publish the packages in dependency order. Each package builds itself on `npm pack`/`npm publish` via `prepack`. Scoped packages are published as public.
+
+```sh
+npm ci && npm test
+npm publish -w @recurring-alignment/core
+npm publish -w @recurring-alignment/judges
+npm publish -w @recurring-alignment/middleware
+npm publish -w @recurring-alignment/replay
+npm publish -w recurring-alignment
+```

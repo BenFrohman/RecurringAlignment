@@ -14,7 +14,9 @@
     }
   },
   "files": [
-    "dist/src"
+    "dist/src",
+    "README.md",
+    "LICENSE"
   ],
   "engines": {
     "node": ">=20"
@@ -33,5 +35,14 @@
     "prompt-engineering",
     "context-management",
     "tf-idf"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "bugs": {
+    "url": "https://github.com/BenFrohman/RecurringAlignment/issues"
+  },
+  "scripts": {
+    "prepack": "tsc -b"
+  }
 }
