@@ -1,5 +1,7 @@
 # RecurringAlignment
 
+[![ci.yml](https://github.com/BenFrohman/RecurringAlignment/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/BenFrohman/RecurringAlignment/actions/workflows/ci.yml)
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23867097.svg)](https://doi.org/10.5281/zenodo.23867097)
 
 **Keep your AI conversations on track.**
