@@ -5,6 +5,7 @@ type: software
 authors:
   - family-names: Frohman
     given-names: Benjamin
+    alias: "B.S. Frohman"
     email: frohmanbenjamin@gmail.com
 version: 0.2.2
 date-released: 2026-11-01
