@@ -4,7 +4,7 @@ title: "RecurringAlignment: Lexical Drift Detection and In-Context Realignment f
 type: software
 authors:
   - family-names: Frohman
-    given-names: Benjamin
+    given-names: Benjamin Stanley
     alias: "B.S. Frohman"
     email: frohmanbenjamin@gmail.com
 version: 0.2.2
